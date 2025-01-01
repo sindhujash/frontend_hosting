@@ -1,0 +1,31 @@
+import React from 'react';
+import Home from './Home'
+import Aboutus from './Aboutus'
+import Contactus from './Contactus'
+import ABC from './ABC'
+import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
+
+function Sindhuja() {
+    return(
+        <Router>
+        <nav>
+          <ol style={{ listStyleType:"none" }}>
+            <img class="logo" src ="data:image/png;base64,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"/>
+            <li><Link to ="/ABC">ABC</Link></li>
+            <li><Link to ="/">Home</Link></li>
+            <li><Link to ="/Aboutus">Aboutus</Link></li>
+            <li><Link to ="/Contactus">Contactus</Link></li>
+          </ol>
+        </nav>
+        <Routes>
+          <Route path ="/ABC" element={<ABC/>}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/Aboutus" element={<Aboutus />}></Route>
+          <Route path="/Contactus" element={<Contactus />}></Route>
+        </Routes>
+      </Router> 
+
+
+)
+}
+export default Sindhuja;
