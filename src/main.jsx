@@ -7,7 +7,7 @@ import Sindhuja from './Sindhuja.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    {/* <Form/> */}
+     {/* <Form/>  */}
     <Sindhuja />
   </StrictMode>,
 )
