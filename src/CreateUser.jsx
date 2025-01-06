@@ -14,7 +14,7 @@ const submit=(e)=>{
     axios.post("https://backend-hosting-s9r8.onrender.com/api/user/create",{name,email,address})
     .then(result=>{
         console.log(result.data)
-        navigate('/');
+        navigate('/'); //navigate to the home page
     })
     .catch(err=>{console.log(err)})
 }
