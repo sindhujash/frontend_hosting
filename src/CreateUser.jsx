@@ -11,7 +11,7 @@ function CreateUser() {
 
 const submit=(e)=>{
     e.preventDefault(); // to avoid rendering data to store 
-    axios.post("http://localhost:3000/api/user/create",{name,email,address})
+    axios.post("https://backend-hosting-s9r8.onrender.com/api/user/create",{name,email,address})
     .then(result=>{
         console.log(result.data)
         navigate('/');
