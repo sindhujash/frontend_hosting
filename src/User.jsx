@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Link } from 'react-router-dom';
 import axios from 'axios';
+import './User.css';
 const User=()=> {
 const[user, setUser] = useState([]);
 
@@ -40,10 +41,7 @@ const deleteUser =(id) => {
                             <Link to={`/update/${users._id}`}>Update User</Link>
                             <button onClick={(e) => deleteUser(users._id)}>delete</button>
                         </td>
-                    </tr>
-                  
-
-                    
+                    </tr>  
                 ))
             }
         </table>
